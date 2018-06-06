@@ -1,0 +1,1 @@
+JUnit is used to write unit tests to validate password.
