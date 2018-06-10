@@ -21,42 +21,42 @@ public class PasswordValidatorTest {
 
     @Test
     public void shouldReturnFalseWhenThereIsSpace() {
-        boolean result = passwordValidator.isValid("ab c");
+        boolean result = passwordValidator.isValid("Hi Cat12@");
 
         assertFalse(result);
     }
 
     @Test
     public void returnFalseIfNoCapitalLetter() {
-        boolean result = passwordValidator.isValid("cbcdsjaksaj");
+        boolean result = passwordValidator.isValid("hicat12@");
 
         assertFalse(result);
     }
 
     @Test
     public void returnFalseIfNoNumber() {
-        boolean result = passwordValidator.isValid("Abcasjjdk");
+        boolean result = passwordValidator.isValid("HiCatWoman@");
 
         assertFalse(result);
     }
 
     @Test
     public void returnFalseIfNoSmallLetter() {
-        boolean result = passwordValidator.isValid("ABCFGHI123");
+        boolean result = passwordValidator.isValid("HICAT12@");
 
         assertFalse(result);
     }
 
     @Test
     public void returnFalseIfNoSpecialCharacter() {
-        boolean result = passwordValidator.isValid("adfgfgB12");
+        boolean result = passwordValidator.isValid("HiCat123");
 
         assertFalse(result);
     }
 
     @Test
     public void returnFalseWhenLengthLessThanEight() {
-        boolean result = passwordValidator.isValid("aC123*");
+        boolean result = passwordValidator.isValid("HiCat1@");
 
         assertFalse(result);
     }
